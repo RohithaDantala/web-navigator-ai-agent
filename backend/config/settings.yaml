@@ -1,0 +1,30 @@
+# Configuration file would be:
+# config/settings.yaml
+server:
+  host: "0.0.0.0"
+  port: 8000
+  debug: true
+
+llm:
+  base_url: "http://localhost:11434"
+  model: "llama3"
+  temperature: 0.1
+  max_tokens: 2000
+
+browser:
+  headless: true
+  timeout: 30000
+  viewport:
+    width: 1920
+    height: 1080
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
+database:
+  path: "web_navigator.db"
+  backup_interval: 3600
+
+logging:
+  level: "INFO"
+  file: "logs/web_navigator.log"
+  max_size: "10MB"
+  backup_count: 5
